@@ -62,7 +62,7 @@ const start = async () => {
         // Listening port
         const port = process.env.PORT
         const host = process.env.HOST
-        app.listen(port, host, () => {
+        app.listen(port || 3000, host, () => {
             console.log(`Server watching ${host} ${port}...`);
         })
     } catch (error) {
